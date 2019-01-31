@@ -1,0 +1,18 @@
+{
+  "name": "lonely-edge-appoint",
+  "productName": "lonely-edge-appoint",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "taku.omi",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron-search-dialog": "git+https://github.com/taku-o/electron-search-dialog.git#master"
+  },
+  "devDependencies": {
+    "electron": "3.1.1"
+  }
+}
