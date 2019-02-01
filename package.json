@@ -1,11 +1,11 @@
 {
-  "name": "lonely-edge-appoint",
-  "productName": "lonely-edge-appoint",
-  "description": "My Electron application description",
+  "name": "electron-search-dialog-sample",
+  "productName": "electron-search-dialog-sample",
+  "description": "sample code for electron-search-dialog.",
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.0",
-  "author": "taku.omi",
+  "author": "taku-o <mail@nanasi.jp> (http://nanasi.jp/)",
   "scripts": {
     "start": "electron ."
   },

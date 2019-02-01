@@ -1,6 +1,6 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow, ipcMain} = require('electron')
-var searchDialog = require('electron-search-dialog').default;
+var SearchDialog = require('electron-search-dialog').default;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -23,6 +23,11 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
+  var _searchDialog = new SearchDialog(mainWindow);
+  ipcMain.on('openSearchDialog', (event, message) => {
+    _searchDialog.openDialog();
+  });
 }
 
 // This method will be called when Electron has finished
@@ -49,10 +54,4 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-
-ipcMain.on('openSearchDialog', (event, message) => {
-    console.log(searchDialog);
-  var sd = searchDialog(mainWindow);
-  sd.openDialog();
-});
 
