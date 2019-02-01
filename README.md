@@ -20,3 +20,5 @@ npm run start
 
 <img src="https://raw.githubusercontent.com/taku-o/electron-search-dialog-sample/master/ss-mini.png" width="400">
 
+<img src="https://raw.githubusercontent.com/taku-o/electron-search-dialog-sample/master/animation.gif" width="400">
+
