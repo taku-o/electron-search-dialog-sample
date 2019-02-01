@@ -2,6 +2,10 @@
 const {app, BrowserWindow, ipcMain} = require('electron')
 var SearchDialog = require('electron-search-dialog').default;
 
+// switch locale
+app.commandLine.appendSwitch('lang', 'en');
+//app.commandLine.appendSwitch('lang', 'ja');
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
