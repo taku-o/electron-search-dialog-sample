@@ -1,6 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow, ipcMain} = require('electron')
-var SearchDialog = require('electron-search-dialog').default;
+const {app, BrowserWindow} = require('electron')
 
 // switch locale
 app.commandLine.appendSwitch('lang', 'en');
@@ -27,11 +26,6 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
-
-  var _searchDialog = new SearchDialog(mainWindow);
-  ipcMain.on('openSearchDialog', (event, message) => {
-    _searchDialog.openDialog();
-  });
 }
 
 // This method will be called when Electron has finished
