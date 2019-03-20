@@ -4,13 +4,13 @@
   "description": "sample code for electron-search-dialog.",
   "keywords": [],
   "main": "./main.js",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "author": "taku-o <mail@nanasi.jp> (http://nanasi.jp/)",
   "scripts": {
     "start": "electron ."
   },
   "dependencies": {
-    "electron-search-dialog": "^0.2.1"
+    "electron-search-dialog": "^0.2.2"
   },
   "devDependencies": {
     "electron": "3.1.1"
